@@ -17,6 +17,7 @@
         <module>x-rpc-client</module>
     </modules>
 
+    <!--抽离版本号-->
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
