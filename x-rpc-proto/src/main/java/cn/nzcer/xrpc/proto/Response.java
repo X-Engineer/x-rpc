@@ -1,4 +1,4 @@
-package cn.nzcer.xrpc;
+package cn.nzcer.xrpc.proto;
 
 import lombok.Data;
 
