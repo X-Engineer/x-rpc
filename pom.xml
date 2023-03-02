@@ -27,8 +27,8 @@
         <fastjson.version>2.0.20</fastjson.version>
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.26</lombok.version>
-        <slf4j-api.version>2.0.6</slf4j-api.version>
-        <logback-classic.version>1.4.5</logback-classic.version>
+        <slf4j-api.version>1.7.26</slf4j-api.version>
+        <logback-classic.version>1.2.3</logback-classic.version>
     </properties>
 
     <!--
