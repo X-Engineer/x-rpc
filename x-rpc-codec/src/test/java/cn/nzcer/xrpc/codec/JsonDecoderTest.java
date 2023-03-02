@@ -1,6 +1,8 @@
 package cn.nzcer.xrpc.codec;
 
-import junit.framework.TestCase;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @project: x-rpc
@@ -9,8 +11,9 @@ import junit.framework.TestCase;
  * @creat: 2023/3/1 21:26
  * @description:
  */
-public class JsonDecoderTest extends TestCase {
+public class JsonDecoderTest {
 
+    @Test
     public void testDecode() {
         JsonEncoder je = new JsonEncoder();
         TestBean bean = new TestBean();

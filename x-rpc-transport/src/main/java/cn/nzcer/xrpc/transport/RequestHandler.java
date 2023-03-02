@@ -11,5 +11,10 @@ import java.io.OutputStream;
  * @description: 处理网络请求的 handler
  */
 public interface RequestHandler {
+    /**
+     *
+     * @param receive 接收到客户端的请求
+     * @param toResp 返回给客户端的响应
+     */
     void onRequest(InputStream receive, OutputStream toResp);
 }
