@@ -15,6 +15,7 @@
         <module>x-rpc-transport</module>
         <module>x-rpc-server</module>
         <module>x-rpc-client</module>
+        <module>x-rpc-example</module>
     </modules>
 
     <!--抽离版本号-->

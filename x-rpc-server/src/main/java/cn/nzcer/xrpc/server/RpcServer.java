@@ -33,6 +33,10 @@ public class RpcServer {
 
     private ServiceInvoker serviceInvoker;
 
+    public RpcServer() {
+        this(new RpcServerConfig());
+    }
+
     public RpcServer(RpcServerConfig config) {
         // config 由调用方传递过来
         this.config = config;
