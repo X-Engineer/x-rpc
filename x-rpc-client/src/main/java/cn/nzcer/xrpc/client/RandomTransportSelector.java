@@ -32,7 +32,7 @@ public class RandomTransportSelector implements TransportSelector {
         count = Math.max(count, 1);
         for (Peer peer : peers) {
             for (int i = 0; i < count; i++) {
-                TransportClient client = ReflectionUtils.newInstance(TransportClient.class);
+                TransportClient client = ReflectionUtils.newInstance(clazz);
                 client.connect(peer);
                 clients.add(client);
             }
@@ -44,7 +44,7 @@ public class RandomTransportSelector implements TransportSelector {
     public synchronized TransportClient select() {
         // 随机从池子中选择一个
         int i = new Random().nextInt(clients.size());
-        return clients.remove(i);
+        return clients.get(i);
     }
 
     @Override
